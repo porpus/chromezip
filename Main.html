@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Chrome Zip!</title>
+        
+        <link rel="stylesheet" type="text/css" href="StyleSheets/Main.css" />
+        <script type="text/javascript" src="JavaScript/rawinflate.js"></script>
+        <script type="text/javascript" src="JavaScript/Utilities.js"></script>
+        <script type="text/javascript" src="JavaScript/Unzip.js"></script>
+    </head>
+    <body>
+        <form onsubmit="return unzip();">
+            Select your zip file:
+            <input type="file" name="zip" id="zip">
+            <br/>
+            <input type="submit" value="Upload">
+        </form>
+        
+        <ul id="downloads">
+        </ul>
+    </body>
+</html>
